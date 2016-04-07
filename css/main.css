@@ -1,0 +1,88 @@
+/*----- css Reset -----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 100%;
+}
+
+img,
+object,
+embed,
+video,
+iframe,
+iframe['style']{
+	max-width:100%;
+	height: auto;
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*----- Fim css Reset -----*/
+/*----- css Geral -----*/
+body{
+  font-family: "helvetica";
+  font-size: 100%;
+  color: #fff;
+}
+.clear{
+  clear: both;
+}
+/*----- Fim css Geral-----*/
+.container{
+  margin: 0 auto;
+  width: 100%;
+}
+/*----- Header -----*/
+header{
+  background-color: #22313F;
+}
+header .content{
+  padding: 10px 3% 10px 3%;
+}
+header h1{
+  font-size: 1.7em;
+  width: 80%;
+  float: left;
+}
+header .btn-mobile{
+  width: 20%;
+  float: right;
+  text-align: right;
+  font-size: 2em;
+  cursor: pointer;
+}
+.btn-mobile:active{
+  color: #34495E;
+}
+.menu{
+  display: none;
+  width: 100%;
+}
+.menu ul li{
+  border-top: 2px solid #2C3E50;
+  font-size: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu ul li a{
+  padding-right: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.menu ul li a:active{
+  color:  #34495E;
+}
+.menu ul li:first-of-type{
+  border-top: none;
+  padding-top:10px;
+}
+/*----- Fim Header -----*/
