@@ -30,7 +30,6 @@ a{
 /*----- css Geral -----*/
 body{
   font-family: "helvetica";
-  font-size: 100%;
   color: #fff;
 }
 .clear{
@@ -38,51 +37,117 @@ body{
 }
 /*----- Fim css Geral-----*/
 .container{
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
+.content{
+  margin: 0 auto;
+}
+
 /*----- Header -----*/
 header{
-  background-color: #22313F;
+  background-color: #222222;
 }
 header .content{
   padding: 10px 3% 10px 3%;
 }
 header h1{
   font-size: 1.7em;
-  width: 80%;
+  width: auto;
   float: left;
 }
+header h1:hover{
+color : #4183D7;
+}
 header .btn-mobile{
-  width: 20%;
+  width: auto;
+  padding: 5px 10px 5px 10px;
   float: right;
-  text-align: right;
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #4183D7;
   cursor: pointer;
+  border-radius: 5px;
+  color:#fff;
 }
 .btn-mobile:active{
-  color: #34495E;
+  color: #000;
 }
 .menu{
-  display: none;
+  padding-top:5px;
   width: 100%;
+  display: none;
 }
 .menu ul li{
-  border-top: 2px solid #2C3E50;
   font-size: 1.3em;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 15px;
 }
 .menu ul li a{
-  padding-right: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 100%;
+  display: block;
+}
+.menu ul li a:hover{
+  color: #4183D7;
 }
 .menu ul li a:active{
-  color:  #34495E;
+  color:  #4183D7;
 }
 .menu ul li:first-of-type{
-  border-top: none;
+  border-top: 1px solid #446CB3;
   padding-top:10px;
 }
 /*----- Fim Header -----*/
+/*----- Apresentacao -----*/
+.apresentacao{
+  padding-top: 20px;
+  background-color: #446CB3;
+  background-image: url(../img/computer-background.jpeg);
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.apresentacao .content{
+  text-align: center;
+  color: #fff;
+  width: 93%;
+
+}
+.apresentacao h2{
+  font-size: 3em;
+  font-weight: 600;
+  padding-top: 60px;
+}
+.apresentacao p{
+  padding-top: 15px;
+  font-style: italic;
+  padding-bottom: 120px;
+  font-size: 1.3em;
+
+}
+/*----- Fim apresentacao -----*/
+/*----- Sobre -----*/
+.sobre .content{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: justify;
+  width: 93%;
+
+}
+.sobre{
+  background-color: #5C97BF;
+}
+.sobre h2{
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+.sobre p{
+  font-size: 1.1em;
+}
+/*----- Fim Sobre -----*/
+
+@media screen and (min-width:700px){
+  .apresentacao{
+    /*background-image: url(../img/computer-background.jpeg);*/
+  }
+}
