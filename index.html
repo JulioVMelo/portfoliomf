@@ -3,12 +3,14 @@
 <head>
   <title>Júlio V Melo</title>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/shapes.svg">
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="Júlio Vilar Melo de Moraes">
   <script type="text/javascript" src="js/jquery-2.2.3.min.js"> </script>
   <script type="text/javascript" src="js/main.js"></script>
   <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container">
@@ -19,9 +21,10 @@
                 <div class="clear"></div>
                 <mav class="menu">
                     <ul>
-                        <li><a href="#">Portfólio</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#sobre" class="scroll">Sobre</a></li>
+                        <li><a href="#conhecimentos" class="scroll">Skills</a></li>
+                        <li><a href="#portfolio" class="scroll">Portfólio</a></li>
+                        <li><a href="#contato" class="scroll">Contato</a></li>
                     </ul>
                 </mav>
                 <div class="clear"></div>
@@ -35,6 +38,7 @@
         </section>
         <section class="sobre">
             <div class="content">
+                <a id="sobre"></a>
                <h2>Sobre</h2>
                <i class="fa fa-graduation-cap"></i>
                <p>Desenvolvedor Web, paraibano, atualmente resido em João Pessoa, tenho 22 anos, sou formado em análise e desenvolvimento de sistemas, e pós graduando em desenvolvimento de aplicações web pela UNIPÊ-JP, estou sempre atento as melhores práticas de desenvolvimento e aprimorando meus conhecimentos, apaixonado por tecnologia e empreendedorismo, para mim programação além de trabalho é um hobby.</p>
@@ -42,34 +46,71 @@
         </section>
         <section class="skills">
             <div class="content">
+              <a id="conhecimentos"></a>
+                <h2>Conhecimentos</h2>
+                <ul>
+                    <li><img src="img/html5.svg" alt="HTML5" title="HTML5"></li>
+                    <li><img src="img/css3.svg" alt="CSS3" title="CSS3"></li>
+                    <li><img  src="img/php.svg" alt="PHP" title="PHP"></li>
+                    <li><img src="img/responsivo.svg" alt="Design Responsivo" title="Designer Responsivo"></li>
+                    <li><img src="img/agilidade.svg" alt="Métodos Ágeis" title="Métodos Ágeis"></li>
+                    <li><img src="img/jquery.svg" alt="javascript/jquery" title="Javascript/JQuery"></li>
+                </ul>
+                <div class="clear"></div>
 
             </div>
         </section>
+
         <section class="portfolio">
             <div class="content">
+              <a id="portfolio"></a>
                 <h2>Sites disponíveis</h2>
                 <article class="trabalho">
                     <figure>
                       <a href="http://www.siteadv.esy.es" target="_blank"><img src="img/trabalho1.jpeg" alt="advogacia/contabilidade" /></a>
+                      <figcaption>*Para adiquirir este site, entre em contato pelo formulário de contato</figcaption>
                     </figure>
-                    <div>
-                        <h3>Advogacia/contabilidade</h3>
-                        <p>HTML, CSS, Responsive, Mobile first, Jquery</p>
+                        <div class="detalhes">
+                        <h3><span class="tema-trabalho">TEMA </span> Advogacia/contabilidade</h3>
+                        <ul>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>HTML5</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>CSS</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Jquery</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>PHP</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Design Responsivo</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Mobile first</li>
+                           <li><button class="ver-site">Visualizar Site</button></li>
+                        </ul>
                     </div>
+                    <div class="clear"></div>
                 </article>
                 <article class="trabalho">
                     <figure>
                       <a href="#"><img src="img/trabalho2.jpeg" alt="Portfolio pessoal" /></a>
+                      <figcaption>*Para adiquirir este site, entre em contato pelo formulário de contato</figcaption>
+
                     </figure>
-                    <div>
-                        <h3>Portfólio pessoal</h3>
-                        <p>HTML, CSS, Responsive, Mobile first, Jquery</p>
+                    <div class="detalhes">
+                        <h3><span class="tema-trabalho">TEMA </span> Portfólio pessoal</h3>
+                        <ul>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>HTML5</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>CSS</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Jquery</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>PHP</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Design Responsivo</li>
+                           <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Mobile first</li>
+                           <li><button class="ver-site">Visualizar Site</button></li>
+                        </ul>
                     </div>
+                    <div class="clear"></div>
                 </article>
+                <div class="clear"></div>
             </div>
         </section>
         <section class="contato">
             <div class="content">
+              <a id="contato"></a>
+
               <h2>Contato</h2>
                 <form action="" method="post">
                     <input type="text" name="nome"  placeholder="Nome">
@@ -91,6 +132,7 @@
                 </ul>
             </div>
         </section>
+
 
     </div>
 </body>

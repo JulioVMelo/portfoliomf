@@ -29,7 +29,8 @@ a{
 /*----- Fim css Reset -----*/
 /*----- css Geral -----*/
 body{
-  font-family: "helvetica";
+  /*font-family: "helvetica";*/
+  font-family: 'Sintony', sans-serif;
   color: #fff;
 }
 .clear{
@@ -97,6 +98,7 @@ header .btn-mobile{
   margin-top: 15px;
 }
 .menu ul li a{
+  text-align: left;
   width: 100%;
   display: block;
 }
@@ -114,11 +116,13 @@ header .btn-mobile{
 /*----- Apresentacao -----*/
 .apresentacao{
   padding-top: 20px;
-  background-image: url(../img/computer-background.jpeg);
+  background-image: url(../img/mac.jpeg);
   background-position:center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size:cover;
+  padding-bottom: 20px;
+  position: relative;
 }
 .apresentacao .content{
   text-align: center;
@@ -141,15 +145,14 @@ header .btn-mobile{
 /*----- Sobre -----*/
 .sobre .content{
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   text-align: justify;
-
 }
 .sobre{
   background-color: #1E1E28;
 }
 .sobre h2{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 2em;
   text-align: center;
 }
@@ -157,48 +160,118 @@ header .btn-mobile{
   width: 100%;
   text-align: center;
   font-size: 3.3em;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .sobre p{
   font-size: 1.1em;
   text-align: justify;
 }
 /*----- Fim Sobre -----*/
+/*----- Skills -----*/
+.skills{
+  background-color:#00624B;
+  color: #1E1E28;
+  padding-bottom: 50px;
+}
+.skills .content{
+  width: 93%;
+}
+.skills img{
+  width: 60px;
+  height: auto;
+
+}
+.skills h2{
+  text-align: center;
+  font-size: 2em;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.skills ul{
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 10%;
+
+}
+.skills ul li{
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-top: 20px;
+
+}
+/*----- Fim Skills -----*/
+
 /*----- Portfolio -----*/
 .portfolio{
-  padding-top: 20px;
-  background-color: #E8E8E8;
+  padding-top: 40px;
+  background-color: ;
   color: #446CB3;
+  padding-bottom: 40px;
 }
 .portfolio h2{
   font-size: 2em;
   text-align: center;
+  padding-bottom: 20px;
 }
 .trabalho{
   margin-top: 20px;
   padding-bottom:  20px;
   border-bottom: 1px solid #446CB3;
   width: 100%;
+  text-align: center;
+  position: relative;
+}
+.trabalho:last-of-type{
+  border: none!important;
 }
 .trabalho h3{
   padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 1.2em;
 }
-.portfolio .trabalho{
+.portfolio .trabalho ul li{
+  font-style: italic;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.portfolio .trabalho .ver-site{
+  width: 140px;
+  float: right;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #446CB3;
+  color: #fff;
+}
+
+.portfolio .trabalho i{
+  padding-right: 15px;
+  width: 40%;
+  text-align: right;
+}
+.tema-trabalho{
+  color: #1E1E28;
+}
+.trabalho figure figcaption{
+  color:#D91E18;
   text-align: center;
 }
 .portfolio .trabalho figure img{
-  max-width: 100%;
+  max-width: 600px;
   width: 100%;
   cursor: pointer;
 }
+
 /*----- Fim Portfolio -----*/
 /*----- Contato -----*/
 .contato{
-  padding-top: 30px;
+  padding-top: 40px;
   background-color: #1E1E28;
   color:#fff;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .contato h2{
   font-size: 2em;
@@ -255,7 +328,6 @@ header .btn-mobile{
   border-color: #6BB9F0;
   color:#6BB9F0;
   cursor: pointer;
-  /*background-color: #fff;*/
 }
 
 /*----- Fim Contato -----*/
@@ -285,3 +357,113 @@ header .btn-mobile{
   margin-right: 0;
 }
 /*----- Fim Footer -----*/
+
+@media screen and (min-width:850px){
+  header .content{
+    width: 90%;
+  }
+  .sobre .content{
+    width: 70%;
+  }
+  .contato .content{
+    width: 60%;
+  }
+  .portfolio .content{
+    width: 80%;
+  }
+  .portfolio h2{
+    padding-bottom: 50px;
+  }
+  .trabalho figure{
+    float: left;
+    width: 60%!important;
+    text-align: left;
+  }
+  .trabalho .detalhes{
+    float: right;
+    width:40%;
+    text-align: left;
+  }
+
+}
+
+@media screen and (min-width:1279px){
+  header .content{
+     width: 80%;
+     position: relative;
+  }
+  header h1{
+    float: left;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  header .btn-mobile{
+    display: none;
+  }
+  header .menu {
+    display: block!important;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: auto;
+  }
+  .menu ul li:first-of-type{
+    border: none;
+    padding-top: 0;
+  }
+  .menu ul li{
+    display: inline;
+    width: auto;
+    margin-left: 25px;
+
+  }
+  .menu ul li a{
+    width: auto;
+    display: inline;
+    outline: none;
+  }
+  .apresentacao .content{
+    padding-bottom: 250px;
+  }
+  .apresentacao .content h2{
+    padding-top: 100px;
+  }
+  .sobre .content{
+    width: 55%;
+  }
+  .skills .content{
+      width: 60%;
+  }
+  .portfolio .content{
+    width: 90%;
+
+    }
+  .portfolio .trabalho{
+     width: 45%;
+     float: left;
+     border-bottom: none;
+     margin-left:2.5%;
+     margin-right:2.5%;
+
+  }
+  .portfolio .trabalho .ver-site{
+    margin-left: 30%;
+    float: none;
+  }
+  .trabalho figure{
+    margin: 0 auto;
+    float: none;
+    width:100%!important;
+    text-align: center;
+  }
+  .trabalho .detalhes{
+    float: none;
+    width:100%;
+    text-align:center;
+  }
+  .contato .content{
+    width: 40%;
+  }
+
+}
